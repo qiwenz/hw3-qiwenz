@@ -10,8 +10,8 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 /** 
- * Updated by JCasGen Tue Oct 01 14:39:18 EDT 2013
- * XML source: C:/Users/Chiven/git/hw3-qiwenz/hw3-qiwenz-ziy-proto/src/main/resources/CasConsumerDescriptor.xml
+ * Updated by JCasGen Mon Oct 07 14:55:01 EDT 2013
+ * XML source: C:/Users/Chiven/git/hw3-qiwenz/hw3-qiwenz-ziy-proto/src/main/resources/hw2-qiwenz-aae.xml
  * @generated */
 public class Annotation extends org.apache.uima.jcas.tcas.Annotation {
   /** @generated

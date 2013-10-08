@@ -1,0 +1,9 @@
+13-10-7 15:16:59 - 10: org.apache.uima.adapter.jms.client.BaseUIMAAsynchronousEngine_impl.<init>(128): 信息: UIMA Version 2.4.0 UIMA-AS Version 2.4.0
+13-10-7 15:16:59 - 10: org.apache.uima.adapter.jms.client.BaseUIMAAsynchronousEngine_impl.setupConnection: 信息: UIMA AS Client Created Shared Connection To Broker: tcp://mu.lti.cs.cmu.edu:61616
+13-10-7 15:16:59 - 10: org.apache.uima.adapter.jms.client.BaseUIMAAsynchronousEngine_impl.initializeProducer: 信息: Initializing JMS Message Producer. Broker: tcp://mu.lti.cs.cmu.edu:61616 Queue Name: ScnlpQueue
+13-10-7 15:16:59 - 10: org.apache.uima.adapter.jms.client.BaseUIMAAsynchronousEngine_impl.initializeConsumer: 信息: Initializing JMS Message Consumer. Broker: tcp://mu.lti.cs.cmu.edu:61616 Queue Name: ID:Chiven-PC-1428-1381173419441-0:0:1
+13-10-7 15:16:59 - 10: org.apache.uima.adapter.jms.client.BaseUIMAAsynchronousEngine_impl.initialize: 信息: Asynchronous Client Has Been Initialized. Serialization Strategy: [xmi] Ready To Process.
+13-10-7 15:17:01 - 11: org.apache.uima.adapter.jms.client.BaseUIMAAsynchronousEngineCommon_impl.stop: 信息: Stopping Asynchronous Client.
+13-10-7 15:17:01 - 11: org.apache.uima.adapter.jms.client.BaseUIMAAsynchronousEngineCommon_impl.stop: 信息: Asynchronous Client Has Stopped.
+13-10-7 15:17:01 - 11: org.apache.uima.adapter.jms.client.BaseUIMAAsynchronousEngineCommon_impl$SharedConnection.destroy: 信息: UIMA AS Client Shared Connection Has Been Closed   
+13-10-7 15:17:01 - 11: org.apache.uima.adapter.jms.client.BaseUIMAAsynchronousEngine_impl.stop: 信息: UIMA AS Client Undeployed All Containers

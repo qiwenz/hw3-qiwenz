@@ -5,7 +5,7 @@
   <primitive>true</primitive>  <annotatorImplementationName>edu.cmu.deiis.types.AnswerScoreAnnotator</annotatorImplementationName>
   <analysisEngineMetaData>
     <name>AnswerScoreAnnotatorDescriptor</name>
-    <description>This annotation is used to set score for each answer.s </description>
+    <description>This annotation is used to set score for each answer.s</description>
     <version>1.0</version>
     <vendor/>
     <configurationParameters/>
@@ -13,6 +13,7 @@
     <typeSystemDescription>
       <imports>
         <import location="deiis_types.xml"/>
+      <import name="org.cleartk.TypeSystem"/>
       </imports>
     </typeSystemDescription>
     <typePriorities/>

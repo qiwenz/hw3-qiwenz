@@ -13,12 +13,32 @@ import org.apache.uima.analysis_component.JCasAnnotator_ImplBase;
 import org.apache.uima.analysis_engine.AnalysisEngineProcessException;
 import org.apache.uima.cas.FSIndex;
 import org.apache.uima.jcas.JCas;
+import java.io.StringReader;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+//import org.apache.uima.analysis_component.JCasAnnotator_ImplBase;
+//import org.apache.uima.analysis_engine.AnalysisEngineProcessException;
+//import org.apache.uima.cas.FSIndex;
+//import org.apache.uima.jcas.JCas;
+//import org.apache.uima.jcas.cas.FSArray;
+import org.cleartk.ne.type.NamedEntity;
+
+import edu.cmu.deiis.types.Answer;
+import edu.cmu.deiis.types.AnswerScore;
+import edu.cmu.deiis.types.NGram;
+import edu.cmu.deiis.types.Question;
+import edu.stanford.nlp.ling.Word;
+//import edu.stanford.nlp.objectbank.TokenizerFactory;
+import edu.stanford.nlp.process.Tokenizer;
+import edu.stanford.nlp.process.PTBTokenizer.PTBTokenizerFactory;
 
 public class AnswerScoreAnnotator extends JCasAnnotator_ImplBase {
 
   @Override
   public void process(JCas aJCas) throws AnalysisEngineProcessException {
-    // TODO Auto-generated method stub
+  
     FSIndex answerIndex = aJCas.getAnnotationIndex(Answer.type);
     FSIndex nGramIndex = aJCas.getAnnotationIndex(NGram.type);
     FSIndex nGram2Index = aJCas.getAnnotationIndex(NGram.type);
@@ -99,5 +119,15 @@ public class AnswerScoreAnnotator extends JCasAnnotator_ImplBase {
       }
 
     }
+    
+  FSIndex<?> stanfordIndex = aJCas.getAnnotationIndex(org.cleartk.token.type.Token.type);
+  Iterator<?> stanfordEntityIter = stanfordIndex.iterator();
+  
+  while(stanfordEntityIter.hasNext()){
+    org.cleartk.token.type.Token token = (org.cleartk.token.type.Token) stanfordEntityIter.next();
+    if(token.getPos().equals("NNP"))
+      System.out.println("nameEntity: " + token.toString());   
+  }
+  
   }
 }

@@ -5,7 +5,8 @@
   <implementationName>org.apache.uima.tools.components.FileSystemCollectionReader</implementationName>
   <processingResourceMetaData>
     <name>collectionReaderDescriptor</name>
-    <description/>
+    <description>This is the Collection Reader Descriptor. I just use
+org.apache.uima.tools.components.FileSystemCollectionReader directly and use same parameter settings as in the uima-as-examples. It is interface to a collection of data items to be analyzed. Collection Readers return CASes that contain the documents to analyze, possibly along with additional metadata.</description>
     <version>1.0</version>
     <vendor/>
     <configurationParameters>

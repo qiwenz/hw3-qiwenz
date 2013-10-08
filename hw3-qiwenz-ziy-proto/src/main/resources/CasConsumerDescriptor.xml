@@ -5,7 +5,7 @@
   <implementationName>edu.cmu.deiis.types.Evaluator</implementationName>
   <processingResourceMetaData>
     <name>CasConsumerDescriptor</name>
-    <description/>
+    <description>This Cas Consumer is based on the Evaluator component of homework 2. It consumes the enriched CAS that was produced by the sequence of Analysis Engines before it, and produce an application-specific data structure, such as a search engine index or database. </description>
     <version>1.0</version>
     <vendor/>
     <configurationParameters>

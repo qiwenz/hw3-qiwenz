@@ -12,7 +12,7 @@ import org.apache.uima.resource.ResourceProcessException;
 
 public class Evaluator extends CasConsumer_ImplBase {
 
-  //@Override
+  // @Override
   public void processCas(CAS aCAS) throws ResourceProcessException {
     // TODO Auto-generated method stub
     JCas jcas;
@@ -21,8 +21,8 @@ public class Evaluator extends CasConsumer_ImplBase {
     } catch (CASException e) {
       throw new ResourceProcessException(e);
     }
-                        //aJCas  
-    //String docText = jcas.getDocumentText();
+    // aJCas
+    // String docText = jcas.getDocumentText();
     FSIndex answerIndex = jcas.getAnnotationIndex(Answer.type);
     FSIndex questionIndex = jcas.getAnnotationIndex(Question.type);
     FSIndex answerscoreIndex = jcas.getAnnotationIndex(AnswerScore.type);
@@ -62,8 +62,8 @@ public class Evaluator extends CasConsumer_ImplBase {
         }
         i++;
       }
-      
-      //bubble sort
+
+      // bubble sort
       for (int m = 0; m < arr.length - 1; m++) {
         for (int n = 0; n < arr.length - m - 1; n++) {
           if (arr[n] > arr[n + 1]) {

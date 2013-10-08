@@ -22,13 +22,16 @@
   <delegateAnalysisEngine key="EvaluationAnntatorDescriptor">
       <import location="descriptors/EvaluationAnntatorDescriptor.xml"/>
     </delegateAnalysisEngine>
+  <delegateAnalysisEngine key="scnlp-qiwenz-client">
+      <import name="scnlp-qiwenz-client"/>
+    </delegateAnalysisEngine>
   </delegateAnalysisEngineSpecifiers>
   <analysisEngineMetaData>
     <name>hw2-qiwenz-aae</name>
-    <description/>
+    <description>This is the aggregate analysis engine for hw2</description>
     <version>1.0</version>
     <vendor/>
-    <configurationParameters/>
+    <configurationParameters searchStrategy="language_fallback"/>
     <configurationParameterSettings/>
     <flowConstraints>
       <fixedFlow>
@@ -36,7 +39,8 @@
         <node>NGramAnnotatorDescriptor</node>
         <node>AnswerAnnotatorDescriptor</node>
         <node>QuestionAnnotatorDescriptor</node>
-        <node>AnswerScoreAnnotatorDescriptor</node>
+        <node>scnlp-qiwenz-client</node>
+      <node>AnswerScoreAnnotatorDescriptor</node>
       <node>EvaluationAnntatorDescriptor</node>
       </fixedFlow>
     </flowConstraints>
